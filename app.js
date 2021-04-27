@@ -24,9 +24,7 @@ const app = express();
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(
-  cors({
-    origin: 'https://grades-app-mongodb.herokuapp.com/',
-  })
+  cors()
 );
 
 app.use(express.json());
